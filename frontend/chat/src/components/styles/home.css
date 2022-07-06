@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400&family=Battambang:wght@300&family=Bebas+Neue&family=Coda&family=Domine:wght@500&family=Josefin+Sans&family=Luckiest+Guy&family=Merriweather&family=Mochiy+Pop+P+One&family=Mulish:wght@300&family=Oswald:wght@300;400&family=Raleway:wght@500&family=Roboto+Condensed:wght@300&family=Roboto+Slab&family=Share&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400&family=Battambang:wght@300&family=Bebas+Neue&family=Coda&family=Domine:wght@500&family=Josefin+Sans&family=Luckiest+Guy&family=Merriweather&family=Mochiy+Pop+P+One&family=Mulish:wght@300&family=Oswald:wght@300;400&family=Raleway:wght@500&family=Roboto+Condensed:wght@300&family=Roboto+Slab&family=Share&display=swap');
+
+*{
+    margin:0;
+    border:0;
+}
+.main-body{
+    width:100vw;
+    height:100vh;
+}
+.main-1{
+    width:100%;
+    height: 90%;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../images/bg-2.jpg");
+    /* justify-content:center; */
+    /* align-items: center; */
+    clip-path: polygon(0 0,100% 0,100% 60%,0 100%);
+    /* background-image: linear-gradient(176deg, #22313F 70%, #F4F4F4 calc(70% + 2px)); */
+    z-index:70;
+    position: absolute; 
+    
+}
+.main-2{
+    width: 100%;
+    height:50%;
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url("../images/bg-3.jpg");
+    position:absolute;  
+    bottom:0;
+}
+.main-content-1{
+    font-family:'Oswald';
+    color:white;
+    font-size:25px;
+    width:10%;
+    position: relative;
+    padding:15% 0 0 15%;
+    /* top:20%; */
+    /* left:5%; */
+    
+}
+.main-sec-1{
+    z-index: 99;
+    position: absolute;
+    left:50%;
+    top:20%;
+    width:35%;
+    /* height: 50%; */
+    padding:2%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.3);
+}
+#main-sec-head{
+    display:flex;
+    justify-content: space-around;
+    font-family:'Bebas Neue';
+    font-size:30px;
+    padding:0 0 1% 0;
+    border-bottom: 1px solid black;
+}
+.main-sec-content{
+    padding:3% 4% 0 0;
+}
+#login,#signup{
+    cursor: pointer;
+}
+#active-item{
+    /* background-color:#e8e9eb; */
+    border-bottom: 4px solid #349beb;
+    cursor: pointer;
+}

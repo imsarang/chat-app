@@ -1,0 +1,68 @@
+.signup{
+    width:100%;
+}
+.signup-input{
+    padding:1% 0 0 0;
+}
+#otp{
+    background-color: #e8e9eb;
+    font-family:'Oswald';
+    font-size:20px;
+    width:100%;
+    padding:1%;
+    cursor: pointer;
+}
+#otp:hover{
+    cursor: pointer;
+    background-color: #839eb8;
+}
+.send-otp{
+    width:100%;
+    padding:7% 0 0 1%;
+}
+.otp-input{
+    text-align: center;
+    padding:2% 0 0 0;
+}
+.input-otp{
+    width:20%;
+    background-color: rgb(225, 225, 229);
+    padding:2%;
+    font-family:'Oswald';
+    font-size:15px
+}
+.div-timer{
+    text-align: center;
+    padding:1% 0 0 0;
+    font-family:'Oswald';
+    cursor: pointer;
+}
+.div-validate{
+    text-align: center;
+    padding:1% 0 0 0;
+}
+#validate-btn{
+    width:30%;
+    padding:2%;
+    font-family:'Bebas Neue';
+    font-size:18px;
+    cursor: pointer;
+}
+
+.div-submit{
+    text-align: center;
+    padding:3% 0 0 0;
+}
+.register-btn{
+    padding:2% 3% 2% 3%;
+    width:80%;
+    font-family: 'Bebas Neue';
+    font-size:20px;
+    cursor: pointer;
+}
+.register-btn:hover{
+    background-color: #e8e9eb;
+}
+#validate-btn:hover{
+    background-color: #839eb8;
+}

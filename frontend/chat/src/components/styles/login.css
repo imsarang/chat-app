@@ -1,0 +1,50 @@
+.login-input{
+    padding:1%;
+}
+
+#username,#password{
+    font-family:'Oswald';
+    font-size:20px;
+    padding:2%;
+    /* border:1px solid black; */
+    background-color: beige;
+    width:98%;
+}
+
+.login-btn{
+    width:100%;
+    padding:1%;
+}
+#submit-btn{
+    font-family:'Bebas Neue';
+    font-size:20px;
+    width:100%;
+    padding:2%;
+    cursor: pointer;
+}
+#or{
+    text-align: center;
+    font-family:'Bebas Neue';
+    color:grey;
+    padding:1%;
+}
+.login-google{
+    width:100%;
+    padding:1%;
+}
+#login-btn{
+    width:100%;
+    padding:3%;
+    font-family:'Bebas Neue';
+    font-size:20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: rgb(224, 221, 221);
+}
+#forget{
+    color:red;
+    font-family: 'Oswald';
+    cursor: pointer;
+}

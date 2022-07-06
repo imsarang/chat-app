@@ -1,0 +1,31 @@
+.chat-head{
+    display:flex;
+    width:100%;
+    justify-content: end;
+    padding:2% 1% 2% 1%;
+}
+.chat-head-1{
+    width:100%;
+    display:flex;
+    cursor: pointer;
+    padding:0 1%;
+}
+.chat-img-tag{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.chat-head-username{
+    padding:1% 2% 2% 2%;
+    font-size:20px;
+    font-family:'Oswald'
+}
+.chat-head-2{
+    width:7%;
+    font-size:30px;
+    padding:1% 1% 0 0;
+    cursor: pointer;
+}
+.chat-head-1:hover{
+    background-color: #e8e9eb;
+}

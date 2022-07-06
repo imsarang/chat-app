@@ -1,0 +1,29 @@
+.chat-body-bottom{
+    display:flex;
+    padding:1% 0 0 0;
+}
+.chat-input{
+    width:90%;
+    padding: 0 0 0 1%;
+}
+.chat-send{
+    width:10%;
+    padding:0 0 0 1%;
+    font-size:30px;
+}
+.msg-box{
+    border:1px solid black;
+    width:100%;
+    font-size:20px;
+    padding:0.5% 2% 0.5% 2%;
+    height:50%;
+    border-radius: 20px;
+    font-family:'Arial'
+}
+#faRight{
+    margin:0 0 0 30%;
+    cursor: pointer;
+}
+#faRight:hover{
+    color:rgb(67, 162, 194);
+}

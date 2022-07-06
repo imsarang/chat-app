@@ -1,0 +1,30 @@
+.profile-header{
+    width:100%; 
+    background-color: #daf5da;
+    display: flex;
+}
+.profile-head-1{
+    /* width:100%; */
+    /* background-color: red; */
+    padding:2%;
+}
+.profile-head-image{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+#pro-div{
+    /* width:50%; */
+    /* height: 50%; */
+    border-radius: 10px;
+}
+#faUser{
+    /* width:40%; */
+    /* background-color: red; */
+}
+.profile-head-2{
+    width:100%;
+    font-family: 'Oswald';
+    font-size:20px;
+    padding:4% 2% 2% 2%;
+}

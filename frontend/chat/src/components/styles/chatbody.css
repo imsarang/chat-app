@@ -1,0 +1,19 @@
+.chat-body-div{
+    width:100%;
+    height:100%;
+}
+.chat-body-header-div{
+    width:100%;
+    height:12%;
+    /* padding:1% 0 1% 0; */
+    background-color:white;
+
+}
+.chat-body-msg-div{
+    width:100%;
+    height:80%;
+}
+.chat-body-profile{
+    width:100;
+    height:100%;
+}

@@ -1,0 +1,27 @@
+.contact-idvl-main{
+    display:flex;
+    padding:2%;
+    border: 1px solid #058724;
+    cursor: pointer;
+    background-color: white;
+}
+.contact-idvl-image{
+    /* width:50%; */
+}
+.image-div{
+    width:50%;
+}
+.idvl-image-tag{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.contact-idvl-username{
+    width:100%;
+    padding:3.5% 4% 4% 4%;
+    font-family: 'Oswald';
+    font-size:18px;    
+}
+.contact-idvl-main:hover{
+    background-color:#e8e9eb;
+}
