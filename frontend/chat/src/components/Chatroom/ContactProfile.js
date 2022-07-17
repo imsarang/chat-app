@@ -1,24 +1,32 @@
 import React from 'react'
 import { FaArrowLeft, FaCaretSquareLeft, FaLongArrowAltLeft } from 'react-icons/fa'
+import { useDispatch } from 'react-redux'
 import bg1 from '../images/madara-4.jpg'
+import { CLICK_CONTACT, CLICK_CONTACT_INFO, CLICK_YOUR_PROFILE } from '../redux/clickReducer'
 import '../styles/profile.css'
 
-const Profile = ({ image, name, status, firstname, lastname, email, setShow }) => {
+const ContactProfile = ({ image, username, status, firstname, lastname, email, setShow }) => {
+    
+    const dispatch = useDispatch()
+
+    const handleBack = ()=>{
+        dispatch(CLICK_CONTACT_INFO({userProfile:false}))
+        dispatch(CLICK_CONTACT({contact:true}))
+        dispatch(CLICK_YOUR_PROFILE({userProfile:false}))
+    }
     return (
         <div className='profile-main'>
-            <div className='profile-back' onClick={() => setShow(false)}>
+            <div className='profile-back' onClick={handleBack}>
                 <FaArrowLeft />
             </div>
             <div className='profile-image'>
-                {
-                    image ? <img src={image} id='profile-img-tag' /> : <img src={bg1} id='profile-img-tag' />
-                }
+               <img src={image} id='profile-img-tag' /> 
             </div>
             <div className='profile-content'>
                 <div className='profile-con-1'>
                     <div className='profile-con'>
                         <label className='profile-label'>Username :</label>
-                        <label className='profile-value'>{name}</label>
+                        <label className='profile-value'>{username}</label>
                     </div>
                     <div className='profile-con'>
                         <label className='profile-label'>Status :</label>
@@ -52,4 +60,4 @@ const Profile = ({ image, name, status, firstname, lastname, email, setShow }) =
     )
 }
 
-export default Profile
+export default ContactProfile

@@ -2,11 +2,9 @@
     display:flex;
     padding:2%;
     border: 1px solid #058724;
+    border-right:none;
     cursor: pointer;
     background-color: white;
-}
-.contact-idvl-image{
-    /* width:50%; */
 }
 .image-div{
     width:50%;
@@ -24,4 +22,13 @@
 }
 .contact-idvl-main:hover{
     background-color:#e8e9eb;
+}
+#cancel-search-icon{
+    transform: rotate(45deg);
+    font-size:20px;
+    padding:70% 0 0 0;
+}
+.contact-3{
+    display:flex;
+    width:100%;
 }

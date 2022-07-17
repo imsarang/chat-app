@@ -1,6 +1,7 @@
 .chat-body-bottom{
     display:flex;
-    padding:1% 0 0 0;
+    padding:1% 0 2% 0;
+    height:100%;
 }
 .chat-input{
     width:90%;
@@ -15,10 +16,11 @@
     border:1px solid black;
     width:100%;
     font-size:20px;
-    padding:0.5% 2% 0.5% 2%;
+    padding:1%;
     height:50%;
     border-radius: 20px;
-    font-family:'Arial'
+    font-family:'Arial';
+    overflow:hidden;
 }
 #faRight{
     margin:0 0 0 30%;

@@ -13,11 +13,8 @@
     width:100%;
     height: 90%;
     background-image: linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../images/bg-2.jpg");
-    /* justify-content:center; */
-    /* align-items: center; */
     clip-path: polygon(0 0,100% 0,100% 60%,0 100%);
-    /* background-image: linear-gradient(176deg, #22313F 70%, #F4F4F4 calc(70% + 2px)); */
-    z-index:70;
+    z-index:99;
     position: absolute; 
     
 }

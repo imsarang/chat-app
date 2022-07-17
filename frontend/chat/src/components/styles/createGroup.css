@@ -1,0 +1,143 @@
+.create-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(0,0,0,0.7);
+    z-index:99;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-main{
+    background-color: white;
+    width:40%;
+}
+#create-cancel{
+    display:flex;
+    justify-content: end;
+    font-size:25px;
+    padding:2%;
+}
+#cancel-icon{
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.search-users{
+    width:100%;
+}
+.search-user-1{
+    width:100%;
+}
+.search-pic{
+    width:10%;    
+}
+.img-search-tag{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.create-con{
+    width:100%;
+    padding:2%;
+}
+.input-con-1,.input-con-2{
+    width:90%;
+    padding:2% 0 2% 0;
+}
+.input-con-2{
+    display:flex;
+}
+#search-icon{
+    padding:2%;
+    cursor: pointer;
+}
+.input-group-name{
+    width:100%;
+    padding:2%;
+    border-radius: 5px;
+    background-color: #e8e9eb;
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+.search-user-1{
+    display:flex;
+    font-family: "Oswald";
+    font-size: 18px;
+    background-color: white;
+    margin:2% 0 0 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.search-user-1:hover{
+    background-color: #b3efb2;
+}
+.search-username{
+    padding:4%;
+}
+.search-pic{
+    padding:2%;
+}
+.create-grp{
+    padding:2% 0 0 0;
+    width:100%;
+}
+#create-grp-btn{
+    width:94%;
+    padding:3%;
+    border-radius: 5px;
+    font-family: "Oswald";
+    font-size:18px;
+    cursor: pointer;
+}
+.search-users{
+    background-color: #daf5da;
+    width: 90%;
+    border-radius: 5px;
+    padding:2%;
+    margin:2% 0 0 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.search-users::-webkit-scrollbar{
+    width:5px;
+    background-color: white;
+}
+.search-users::-webkit-scrollbar-thumb{
+    background-color: #b3efb2;
+    border-radius: 1px;
+}
+#create-grp-btn:hover{
+    background-color: #b4b4b5;
+}
+.show-add{
+    display: flex;
+    overflow-x: auto;
+    width:94%;
+}
+.show-add::-webkit-scrollbar{
+    height:5px;
+}
+.show-add::-webkit-scrollbar-thumb{
+    background-color: #b3efb2;
+}
+.saved{
+    display:flex;
+    margin:0 2% 1% 0;
+    padding:1%;
+    background-color: #b3efb2;
+    border-radius: 5px;
+    font-family: "Oswald";
+    text-align: center;
+}
+#user-name{
+    padding: 0 5% 0 0;
+}
+#cancel-user{
+    padding:0 5% 0 0;
+    cursor: pointer;
+}
+#cancelUser{
+    transform: rotate(45deg);
+}

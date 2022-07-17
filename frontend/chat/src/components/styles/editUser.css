@@ -1,0 +1,96 @@
+.edit{
+    background-image:linear-gradient(rgba(213, 247, 219,0.9),rgba(213,247,219,0.3)) ,url('../images/bg-3.jpg');
+}
+.edit-content{
+    display:flex;
+}
+.edit-pic{
+    width:20%;
+    padding:5% 2% 4% 40%;
+}
+.edit-content{
+    display:flex;
+    font-family:'Oswald';
+    font-size: 18px;
+}
+.edit-div-label{
+    padding:5%;
+}
+.edit-div-con{
+    padding:17%;
+}
+.edit-div-input{
+    padding:5%;
+    width:50%;
+}
+.edit-div-in{
+    background-color: white;
+    border-radius: 10px;
+    padding:2%; 
+    margin:1%;
+    font-family: 'Oswald';
+    font-size: 18px;
+    width:100%;
+}
+.edit-div-in-email{
+    padding:1% 1% 2% 1%;
+    cursor:not-allowed;
+}
+.save-edit{
+    display:flex;
+    justify-content: end;
+    padding:0 3% 0 0;
+}
+.save-edit-btn{
+    padding:2% 3% 2% 3%;
+    background-color: aquamarine;
+    font-family: 'Oswald';
+    cursor: pointer;
+}
+.save-edit-btn:hover{
+    background-color: rgb(62, 236, 178);
+}
+#profile-pic{
+    width:150px;
+    height: 150px; 
+    border-radius: 50%;
+}
+#add-image{opacity: 0;}
+#add-pic-div,#remove-pic-div{
+    padding:1%;
+    background-color: black;
+    color:white;
+    position:absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#add-pic-div:hover,#remove-pic-div:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s;
+}
+#add-pic,#remove-pic{
+    cursor: pointer;
+}
+#add-pic-div{
+    top:24%;
+    left:61%;
+}
+#remove-pic-div{
+    top:24%;
+    left:67%;
+}
+#profile-pic-btns{
+    display: flex;
+    justify-content: space-around;
+}
+.delete-btn{
+    margin: 0 1% 0 0;
+    padding:0 4% 0 4%;
+    font-family: 'Oswald';
+    background-color: rgb(249, 151, 151);
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: rgb(252, 114, 114);
+}

@@ -1,0 +1,141 @@
+.group-info{
+    padding:1%;
+    height: 97%;
+    background-color: white;
+    background-image:linear-gradient(rgba(213, 247, 219,0.5),rgba(213,247,219,0.3)) ,url('../images/bg-3.jpg');
+}
+.group-back{
+    position: absolute;
+    cursor: pointer;
+    font-size:25px;
+    padding:1%;
+}
+
+#group-pic{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+}
+.group-dp-info-1,.group-dp-info-2{
+    position: absolute;
+    padding:1%;
+}
+.group-dp-info-1{
+    background-color: black;
+    top:37%;
+    left:58%;
+    border-radius: 50%;
+    font-size:30px;
+    color:white;
+    cursor: pointer;
+}
+.group-dp-info-1:hover,.group-dp-info-2:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s;
+}
+.group-dp-info-2{
+    background-color: black;
+    top:37%;
+    left:71%;
+    border-radius: 50%;
+    font-size:30px;
+    color:white;
+    cursor: pointer;
+}   
+.group-dp-btns{
+    cursor: pointer;
+}
+#group-dp-not{
+    display:flex;
+    justify-content: space-around;
+}
+.group-idvl{
+    width:90%;
+    display:flex;
+    margin:2% 0 0 0;
+    padding:1%;
+    background-color: #e8e9eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.idvl-pic{
+    width:20%;
+}
+#idvl-image-tag{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.idvl-user{
+    width:50%;
+    font-family: 'Oswald';
+    padding:4% 0 0 0;
+}
+.idvl-admin,.remove-idvl{
+    font-family: 'Oswald';
+    padding:4% 0 0 0;
+    color:rgb(12, 136, 60)
+}
+.group-idvl:hover{
+    background-color: #b7b8ba;
+}
+#remove-btn{
+    
+}
+.group-image{
+    height:55%;
+    width:100%;
+}
+#members-head{
+    font-family: 'Bebas Neue';
+    font-size:20px;
+    padding:0 0 1% 0;
+}
+.members{
+    overflow-y: auto;
+    height: 100%;
+}
+.group-members{
+    height:38%;
+}
+.members::-webkit-scrollbar{
+    width:5px;
+    background-color: #e8e9eb;
+}
+.members::-webkit-scrollbar-thumb{
+    background-color: #a4a6a8;
+    border-radius: 5px;
+}
+#set-dp-div,#leave-grp{
+    width:15%;
+    padding:1%;
+}
+#leave-grp-btn{
+    padding:5%;
+    font-family: 'Bebas Neue';
+    font-size:15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:100%;
+    background-color: rgb(247, 156, 156);
+}
+#set-dp-tag{
+    padding:5%;
+    font-family: 'Bebas Neue';
+    font-size:15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:100%;
+    background-color: rgb(147, 201, 147);
+}
+#leave-grp-btn:hover{
+    background-color: rgb(228, 65, 65);
+    color:white;
+    transition: 0.5s;
+}   
+#set-dp-tag:hover{
+    background-color: black;
+    color:white;
+    transition: 0.5s;
+}

@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import SuccessInfo from '../Info/SuccessInfo'
 import '../styles/signup.css'
 import OTP from './OTP'
-const Signup = ({setLogin,setInfoTimer,setSignupSucccess}) => {
+import axios from 'axios'
+
+const Signup = ({ setLogin, setInfoTimer, setSignupSucccess }) => {
   const [user, setUser] = useState({
     username: null,
     email: null,
@@ -16,17 +18,43 @@ const Signup = ({setLogin,setInfoTimer,setSignupSucccess}) => {
   const [verify, setVerify] = useState(false)
 
   const handleInputs = (e) => {
-
+    setUser({ ...user, [e.target.name]: e.target.value })
   }
   const sendOTP = async () => {
     setOtp(true)
     setSeconds(30)
   }
   const handleSubmit = async () => {
-    console.log(`handleSubmit`);
-    setSignupSucccess(true)
-    setInfoTimer(2)
-    setLogin(true)
+    // console.log(`handleSubmit`);
+    try {
+      if (user.password === user.cpassword) {
+        const result = await fetch('api/user/register',{
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            username: user.username,
+            email: user.email,
+            password: user.password
+          })
+        })
+        const found = await result.json()
+        console.log(found);
+        if (result) {
+          setSignupSucccess(true)
+          setInfoTimer(2)
+          setLogin(true)
+        }
+
+      }
+      else {
+        alert('Password didnot match')
+      }
+
+    } catch (e) { console.log(e); }
+
+
   }
   const handleResend = () => {
     setSeconds(30)
@@ -77,7 +105,7 @@ const Signup = ({setLogin,setInfoTimer,setSignupSucccess}) => {
       </div>
 
       {
-        otp ? <><OTP seconds={seconds} setSeconds={setSeconds}/>
+        otp ? <><OTP seconds={seconds} setSeconds={setSeconds} />
           <div className='otp-input'>
             <input
               type='text'
@@ -97,19 +125,19 @@ const Signup = ({setLogin,setInfoTimer,setSignupSucccess}) => {
               Validate OTP
             </button>
           </div>
-          </> :
+        </> :
           <div className='send-otp'>
             {
-              !verify?<>
-              <button type='button' onClick={sendOTP} id='otp'>
-              VERIFY EMAIL WITH OTP
-            </button></>
-            :
-              <>
-              <div className='div-submit'>
-            <button type='submit' onClick={handleSubmit}
-              className='register-btn'>Sign Up</button>
-          </div></>
+              !verify ? <>
+                <button type='button' onClick={sendOTP} id='otp'>
+                  VERIFY EMAIL WITH OTP
+                </button></>
+                :
+                <>
+                  <div className='div-submit'>
+                    <button onClick={handleSubmit}
+                      className='register-btn'>Sign Up</button>
+                  </div></>
             }
           </div>
       }

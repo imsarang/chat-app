@@ -1,0 +1,28 @@
+.message{
+    max-height: 50%;
+    padding:1%;
+}
+#msg-main{
+    background-color: rgb(245, 250, 246);
+    max-width:40%;
+    height:inherit;
+    display: inline-block;
+    border-radius: 10px;
+}
+.msg-user{
+    padding:0 0 1% 0;
+    font-family:'Oswald';
+
+}
+.msg-content{
+    height:auto;
+    font-family:'Roboto Condensed';
+    font-weight:bold;
+    font-size:15px;
+}
+/* #content{
+    width: 100%;
+    display:inline-block;
+    height:100%;
+    word-break: break-all;
+} */
