@@ -11,13 +11,23 @@
 
 }
 .chat-body-msg-div{
-    min-height: 70%;
+    /* height: 70%; */
     height:73%;
     width:100%;
     /* overflow: scroll; */
+    /* padding:10%; */
+    overflow-y: auto;
     white-space: nowrap;
     background-image: url('../images/bg-6.jpg');
 
+}
+.chat-body-msg-div::-webkit-scrollbar{
+    /* width:20%; */
+    background-color: red;
+}
+.chat-body-msg-div::-webkit-scrollbar-thumb{
+    width:10px;
+    background-color: blue;
 }
 .chat-body-bottom-div{
     width:100%;

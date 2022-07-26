@@ -6,7 +6,7 @@ const RefreshToken = require('../models/refreshTokenModel')
 const { generateToken } = require('../utils/generateToken')
 const { generateRefreshToken } = require('../utils/refreshToken')
 const bcrypt = require("bcryptjs")
-
+const jwt = require('jsonwebtoken')
 exports.registerUser = catchAsyncErrors(async (req, res) => {
     let { firstname, lastname, username, email, password, profilePic, status } = req.body
 
@@ -128,9 +128,11 @@ exports.showUser = catchAsyncErrors(async (req, res) => {
         email: req.params.email
     })
 
+    const token = req.cookies.jwt
     if (user) res.status(200).json({
         success: true,
-        user
+        user,
+        token
     })
     else res.status(404).json({
         success: false,
@@ -174,6 +176,7 @@ exports.allUsers = catchAsyncErrors(async (req, res) => {
 
     res.json({ users })
 })
+
 
 exports.showUsers = catchAsyncErrors(async (req, res) => {
     const user = await User.find()

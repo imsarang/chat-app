@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/chatroom/:username' element={<ChatMain/>}/>
+        <Route exact path='/chatroom/:username/' element={<ChatMain/>}/>
       </Routes>
     </div>
   );

@@ -1,5 +1,5 @@
 const express = require('express')
-const { addChat, getChat, createGroup, renameGroup, removeUserFromGroup, addUserToGroup, setGroupDp } = require('../controllers/chatControllers')
+const { addChat, getChat, createGroup, renameGroup, removeUserFromGroup, addUserToGroup, setGroupDp, getChatInfo } = require('../controllers/chatControllers')
 const { authUser } = require('../utils/authUser')
 const router = express.Router()
 
@@ -10,5 +10,6 @@ router.route('/group/rename').put(authUser,renameGroup)
 router.route('/group/remove/user').put(authUser,removeUserFromGroup)
 router.route('/group/add/user').put(authUser,addUserToGroup)
 router.route('/group/addDp').put(authUser,setGroupDp)
+router.route('/:id').get(authUser,getChatInfo)
 
 module.exports = router

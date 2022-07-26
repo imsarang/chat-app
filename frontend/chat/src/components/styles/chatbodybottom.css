@@ -9,8 +9,11 @@
 }
 .chat-send{
     width:10%;
-    padding:0 0 0 1%;
+    padding:0 1% 1% 3%;
     font-size:30px;
+}
+.form{
+    height: 100%;
 }
 .msg-box{
     border:1px solid black;
@@ -21,6 +24,13 @@
     border-radius: 20px;
     font-family:'Arial';
     overflow:hidden;
+}
+#submit-btn-send{
+    width:100%;
+    height: 90%;
+    text-align: center;
+    font-size:40px;
+    background-color: white;
 }
 #faRight{
     margin:0 0 0 30%;

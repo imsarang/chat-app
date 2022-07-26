@@ -9,11 +9,15 @@ exports.authUser = async(req,res,next)=>{
 
     token = token.split(' ')[1]
     const refToken = req.cookies.jwt
-    try{const user = await RefreshToken.find({token:refToken})
-   
-        const decoded = jwt.verify(token,process.env.JWT_ACCESS_SECRET)
+
+    try{
+        const user = await RefreshToken.find({token:refToken})
+    
+        const decoded = jwt.verify(refToken,process.env.JWT_REFRESH_SECRET)
+        console.log(decoded);
         if(user)
-        req.user = await User.find({_id:user[0].user}).select("-password")
+        req.user = await User.find({_id:decoded.id}).select("-password")
+        // console.log(req.user);
         next()
     }catch(e){
         return res.status(401).json({

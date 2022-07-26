@@ -11,7 +11,7 @@ const CreateGroup = ({ accessToken }) => {
     const [users, setUsers] = useState([{}])
     const [addUser,setAddUser] = useState([])
     const [savedUser,setSavedUser] = useState([])
-
+    
     const handleCancel = () => {
         dispatch(CLICK_CREATE_GROUP({ group: false }))
     }

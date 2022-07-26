@@ -81,7 +81,16 @@
     background-color: #b7b8ba;
 }
 #remove-btn{
-    
+    background-color: rgb(254, 171, 171);
+    font-family: 'Oswald';
+    font-size: 15px;
+    padding:20%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#remove-btn:hover{
+    background-color: rgb(252, 70, 70);
+    transition: 0.5s;
 }
 .group-image{
     height:55%;
@@ -107,9 +116,18 @@
     background-color: #a4a6a8;
     border-radius: 5px;
 }
-#set-dp-div,#leave-grp{
+#set-dp-div,#leave-grp,#add-div{
     width:15%;
     padding:1%;
+}
+#add-mem-tag{
+    padding:5%;
+    font-family: 'Bebas Neue';
+    font-size:15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:100%;
+    background-color: rgb(156, 170, 247);
 }
 #leave-grp-btn{
     padding:5%;
@@ -129,6 +147,11 @@
     width:100%;
     background-color: rgb(147, 201, 147);
 }
+#add-mem-tag:hover{
+    background-color: rgb(35, 25, 220);
+    color:white;
+    transition: 0.5s;
+}
 #leave-grp-btn:hover{
     background-color: rgb(228, 65, 65);
     color:white;
@@ -139,3 +162,93 @@
     color:white;
     transition: 0.5s;
 }
+.remove-modal-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:99;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove-main{
+    background-color: white;
+    font-family:"oswald";
+    padding:2%;
+    font-size:20px
+}
+.remove-btns{
+    display:flex;
+    width:100%;
+}
+.remove-btns-btn{
+    width:100%;
+    padding: 10% 0 0 0;
+}
+#rem-yes,#rem-no{
+    width:100%;
+    font-family: 'Oswald';
+    font-size:18px;
+    cursor: pointer;
+}
+#rem-yes{
+    margin:0 2% 0 0;
+    background-color: aquamarine;
+}
+#rem-no{
+    margin:0 0 0 2%;
+    background-color: rgb(238, 95, 123);
+}
+#rem-yes:hover{
+    background-color: rgb(100, 198, 166);
+}
+#rem-no:hover{
+    background-color: rgb(240, 50, 88);
+}
+.show-add-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:99;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.show-add-main{
+    background-color: white;
+    padding:2%;
+    width:40%;
+}
+.close-add-mem{
+    /* padding:2%; */
+    display:flex;
+    justify-content: end;
+}
+#close-add{
+    transform: rotate(45deg);
+    font-size:20px;
+    cursor: pointer;
+}
+.add-member-group{
+    width:100%;
+    padding:2% 0 0 0;
+}
+#add-user-btn{
+    width:94%;
+    font-family: "Oswald";
+    font-size:18px;
+    padding:2%;
+    cursor: pointer;
+    background-color: rgb(177, 230, 188);
+}
+#add-user-btn:hover{
+    background-color: rgb(49, 214, 112);
+    transition: 0.5s;
+}
+

@@ -172,3 +172,16 @@ exports.setGroupDp = catchAsyncErrors(async(req,res)=>{
         group
     })
 })
+
+exports.getChatInfo = catchAsyncErrors(async(req,res)=>{
+    const chat = await Chat.find({_id:req.params.id})
+    .populate("users","-password").populate("groupAdmin","-password")
+    if(chat) return res.status(200).json({
+        success:true,
+        chat
+    })
+    else return res.status(400).json({
+        success:false,
+        message:"chat/group not found"
+    })
+})

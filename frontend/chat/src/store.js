@@ -18,9 +18,10 @@ const persistUser = persistReducer(persistConfig2,userReducer)
 const store = configureStore({
     reducer:{
         click:persistClick,
-        user:persistUser
-    }
-})
+        user:persistUser,
+    },
+    
+}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 const persistor = persistStore(store)   
 export default store

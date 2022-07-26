@@ -68,10 +68,10 @@ const ChatBody = ({ accessToken }) => {
                 <ChatBodyHeader />
               </div>
               <div className='chat-body-msg-div'>
-                <ChatBodyMsg />
+                <ChatBodyMsg accessToken={accessToken}/>
               </div>
               <div className='chat-body-bottom-div'>
-                <ChatBottom />
+                <ChatBottom accessToken={accessToken}/>
               </div>
             </> :
               <div style={{height:'100%'}}>

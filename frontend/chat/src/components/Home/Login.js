@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { CLICK_CONTACT, CLICK_CONTACT_INFO, CLICK_YOUR_PROFILE, failure, SHOW_FAILURE } from '../redux/clickReducer'
-import { ADD_USERNAME } from '../redux/userReducer'
+import { ADD_USERNAME, CURRENT_USER } from '../redux/userReducer'
 import '../styles/login.css'
 import Cookies from 'js-cookie'
 
@@ -38,6 +38,7 @@ const Login = () => {
       dispatch(ADD_USERNAME({
         username: user.email
       }))
+
       navigate(`/chatroom/${user.email}`)
       dispatch(CLICK_CONTACT({contact:false}))
       dispatch(CLICK_CONTACT_INFO({userInfo:false}))
