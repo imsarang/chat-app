@@ -56,7 +56,7 @@ const Contacts = ({ accessToken,chats }) => {
 
                     : <div className='contact-list'>
                         {
-                            chats.map((item) => {
+                            chats?.map((item) => {
                                 return <div className='contact-div' onClick={() => handleChatUser(item)}>
                                     <ContactIdvl user={item.chatName}
                                         image={item.groupDP} />

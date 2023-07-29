@@ -14,7 +14,7 @@ exports.authUser = async(req,res,next)=>{
         const user = await RefreshToken.find({token:refToken})
     
         const decoded = jwt.verify(refToken,process.env.JWT_REFRESH_SECRET)
-        console.log(decoded);
+        
         if(user)
         req.user = await User.find({_id:decoded.id}).select("-password")
         // console.log(req.user);

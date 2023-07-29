@@ -27,8 +27,8 @@ const ChatBody = ({ accessToken }) => {
   const chat_user = useSelector(chatUser)
 
   const handleChatUser = () => {
-    chat_user.users.map((item) => {
-      if (item.email != e_mail)
+    chat_user?.users?.map(item => {
+      if (item.email !== e_mail)
         setUser({
           username: item.username,
           firstname: item.firstname,
@@ -41,15 +41,16 @@ const ChatBody = ({ accessToken }) => {
   }
   useEffect(() => {
     // handleShowUser()
+    console.log(chat_user);
     handleChatUser()
-  }, [chat_user])
+  }, [])
 
   return (
     <div className='chat-body-div'>
       {
         userPro ? <div className='chat-body-profile'>
           {
-            chat_user.isGroupChat ? <><GroupInfo
+            chat_user?.isGroupChat ? <><GroupInfo
               chat_user={chat_user}
               accessToken={accessToken} /></>
               : <ContactProfile
@@ -70,9 +71,9 @@ const ChatBody = ({ accessToken }) => {
               <div className='chat-body-msg-div'>
                 <ChatBodyMsg accessToken={accessToken}/>
               </div>
-              <div className='chat-body-bottom-div'>
+              {/* <div className='chat-body-bottom-div'>
                 <ChatBottom accessToken={accessToken}/>
-              </div>
+              </div> */}
             </> :
               <div style={{height:'100%'}}>
                 <Welcome />

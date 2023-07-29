@@ -45,20 +45,21 @@ io.on("connection",(socket)=>{
     // for setup : takes user data from frontend
     socket.on('setup',(userData)=>{
         socket.join(userData._id)
-        console.log(userData._id);
+        console.log(userData.username);
         socket.emit(`connected`)
     })
 
     // for joining chat
     socket.on('join chat',(room)=>{
-        socket.join(room)
-        console.log(`User joined Room : ${room}`);
+        socket.join(room._id)
+        console.log(`User joined Room : ${room._id}`);
     })
 
     // for send/new message
     socket.on('new message',(newMsgRcv)=>{
-        let chat = newMsgRcv
-        if(!chat.users) return console.log(`chat.users not defined`);
+        console.log(newMsgRcv);
+        let chat = newMsgRcv.chat
+        if(!chat?.users) return console.log(`chat.users not defined`);
 
         chat.users.forEach(user=>{
             if(user._id == newMsgRcv.sender._id) return

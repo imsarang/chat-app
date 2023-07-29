@@ -112,7 +112,7 @@ exports.logoutUser = catchAsyncErrors(async (req, res) => {
     if (!foundUser) return res.sendStatus(403)
 
     const refreshToken = await RefreshToken.deleteOne({
-        user: foundUser._id
+        user: foundUser._id 
     })
 
     res.clearCookie('jwt', { httpOnly: true })

@@ -1,0 +1,7 @@
+.chat-body-main{
+    height: 100%;
+}
+.chat-body-msg-all{
+    height:500px;
+    overflow: auto;
+}
